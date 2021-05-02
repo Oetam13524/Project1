@@ -1,0 +1,85 @@
+.hidden {
+    display: none;
+}
+
+.homeButton {
+    background-color: rgb(255, 0, 0);
+    font-weight: 900;
+}
+
+.homeButton :hover {
+    background-color: blue;
+}
+
+.moviesButton {
+    font-weight: 900;
+}
+
+.moviesButton :hover {
+    font-size: 17.3px;
+}
+
+.seriesButton {
+    font-weight: 900;
+}
+
+.seriesButton :hover {
+    font-size: 17.3px;
+}
+
+.aboutButton {
+    font-weight: 900;
+}
+
+.aboutButton :hover {
+    font-size: 17.3px;
+}
+
+/* .banner-image {
+    background-image: url(../images/central-intelligence/central4.jpg);
+    background-size: cover;
+} */
+
+.pageTitle {
+    font-family: 'ArchicocoRegular';
+    font-weight: bold;
+    font-style: normal;
+    color: red;
+    font-size: 72px;
+}
+
+* {
+    overflow-x: hidden;  /* hide horizontal */
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.banner-image {
+    background-image: url(../images/jumanji3/jumanji2.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+
+#centralVideoButton {
+    width: 260px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #008bfd;
+    color: white;
+    
+}
+
+#centralTrailerButton {
+    width: 260px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #008bfd;
+    color: white;
+    
+}
+

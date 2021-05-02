@@ -21,6 +21,8 @@
         crossorigin="anonymous"></script>
 
 
+
+
     <!-- Navigation Bar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow p-md-3">
         <div class="container">
@@ -62,39 +64,6 @@
     </nav>
 
     
-    
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -103,26 +72,85 @@
 
     
     <div class="banner-image w-100 vh-100 d-flex justify-content-center">
-        <div class="container position-absolute my-5 d-grid gap-5">
+        <div class="container my-5 gap-5">
             <div class="row gx-5">
-                <div class="col-sm-4 p-5 justify-content-center h-auto d-inline-block">
-                    <img src="../images/central.jpg" class="img-fluid" alt="Central Intelligence" width="230" style="border-radius: 6%;">
-                </div>
+                <div class="row">
+                    <div class="col-sm-5 p-5 justify-content-center h-auto d-inline-block">
+                        <img src="../images/central.jpg" class="img-fluid" alt="Central Intelligence" width="230"
+                            style="border-radius: 6%;">
+                    </div>
     
-                <div class="col-sm-8 p-5 d-flex justify-content-center">
-                    <div class="section">
-                    <p class="mb-5 p-2 text-start text-white border bg-dark border-secondary rounded">Central Intelligence is a 2016 American action comedy film directed by Rawson Marshall Thurber and written by Thurber, 
-                        Ike Barinholtz and David Stassen. The film stars Kevin Hart and Dwayne Johnson as two old high school classmates who go on the run after one of them joins the 
-                        CIA to save the world from a terrorist who intends to sell satellite codes.
-                    </p>
+                    <div class="col-sm-7 p-5 justify-content-center h-auto d-inline-block">
+    
+                        <div class="row gx-0 text-center">
+                            <div class="col mt-2 border rounded border-warning"
+                                style="background-color: rgba(43, 43, 43, 0.671);">
+                                <a class="nav-link text-warning" href="https://www.imdb.com/title/tt1489889/">IMDB:
+                                    6.3/10</a>
+                            </div>
+                            <div class="col mt-2 ms-2 border rounded border-danger"
+                                style="background-color: rgba(43, 43, 43, 0.671);">
+                                <a class="nav-link text-danger"
+                                    href="https://www.rottentomatoes.com/m/central_intelligence">Rotten Tomatoes: 71%</a>
+                            </div>
+                            <div class="col mt-2 ms-2 border rounded border-info"
+                                style="background-color: rgba(43, 43, 43, 0.671);">
+                                <a class="nav-link text-info"
+                                    href="https://www.metacritic.com/movie/central-intelligence">Metacritic: 52%</a>
+                            </div>
+    
+                        </div>
+    
+                        <p class="p-2 mt-2 text-start text-white border bg-dark border-secondary rounded">Central
+                            Intelligence is a 2016 American action comedy film directed by Rawson Marshall Thurber and
+                            written by Thurber,
+                            Ike Barinholtz and David Stassen. The film stars Kevin Hart and Dwayne Johnson as two old high
+                            school classmates who go on the run after one of them joins the
+                            CIA to save the world from a terrorist who intends to sell satellite codes.
+                            The film premiered in Los Angeles on June 10, 2016, and was theatrically released in the United
+                            States on June 17, 2016. Central Intelligence received generally positive reviews from critics,
+                            with praise directed at Hart and Johnson's performances, and with criticism aimed at the script.
+                            The film was a commercial success at the box office, grossing $217 million worldwide against its
+                            $50 million budget.
+                        </p>
                     </div>
                 </div>
     
-                <div class="col-sm-8 p-5 d-flex justify-content-center">
-                    <div id="centralVideo"  style="display:none;" class="centralShowVideo" >
-                        <iframe src="https://hqq.to/e/MG16d2p5VWRCakhjbjhubzg5TlJ0Zz09" class="modal-item w-100 vh-auto" frameborder="0" allowfullscreen="true" vspace="0" hspace="0" scrolling="auto"></iframe>
+    
+                <div class="row d-flex">
+                    <div class="col-sm-6 p-5">
+                        <div class="col">
+                            <div class="row" id="maincontspidey" style="display: block;">
+                                <iframe width="520" height="320" class="modal-item w-100 d-flex justify-content-center"
+                                    src="https://www.youtube.com/embed/0FKctBraQj0" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+    
+                            <div class="row d-flex justify-content-end">
+                                <button type="button" class="btn btn-outline-primary active" id="centralVideoButton"
+                                    onclick="showDiv()">
+                                    Gledaj Film
+                                </button>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div id="centralVideo" style="display:none;" class="row centralShowVideo">
+                                <iframe src="https://hqq.to/e/MG16d2p5VWRCakhjbjhubzg5TlJ0Zz09" width="520" height="320"
+                                    class="modal-item w-100 d-flex justify-content-center" frameborder="0"
+                                    allowfullscreen="true" vspace="0" hspace="0" scrolling="auto"></iframe>
+                            </div>
+    
+                            <div class="row">
+                                <button type="button" class="btn btn-outline-primary active" id="centralTrailerButton"
+                                    onclick="showVid()">
+                                    Gledaj Trailer
+    
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <input class="centralVideoButton" type="button" name="answer" value="Gledaj Film" onclick="showDiv()" />
                 </div>
             </div>
         </div>
@@ -132,7 +160,13 @@
 
 
 
-      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+    
+    
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
 
   
@@ -158,11 +192,27 @@
         //     }
         // });
 
-
-        function showDiv() {
-        document.getElementById('centralVideo').style.display = "block";
+        if(centralVideo){
+            showVid();
+            
+        } else {
+            showDiv();
         }
 
+        function showDiv() {
+                document.getElementById('centralVideo').style.display = "block";
+                document.getElementById('maincontspidey').style.display = "none";
+                document.getElementById('centralVideoButton').style.display = "none";
+                document.getElementById('centralTrailerButton').style.display = "block";
+                
+        }
+
+        function showVid() {
+                document.getElementById('centralVideo').style.display = "none";
+                document.getElementById('maincontspidey').style.display = "block";
+                document.getElementById('centralVideoButton').style.display = "block";
+                document.getElementById('centralTrailerButton').style.display = "none";
+        }
     </script>
 
 

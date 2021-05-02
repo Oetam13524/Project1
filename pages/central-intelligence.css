@@ -63,36 +63,23 @@
 }
 
 
-.centralVideoButton {
+#centralVideoButton {
     width: 260px;
     height: 50px;
     border: none;
     cursor: pointer;
     background-color: #008bfd;
     color: white;
-    margin-left: 8%;
+    
 }
 
-.imdbButton {
-    opacity: 1.0;
+#centralTrailerButton {
+    width: 260px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #008bfd;
+    color: white;
+    
 }
 
-.imdbButton :hover {
-    opacity: 0.5;
-}
-
-.metacriticButton {
-    opacity: 1.0;
-}
-
-.metacriticButton :hover {
-    opacity: 0.8;
-}
-
-.tomatoButton {
-    opacity: 1.0;
-}
-
-.tomatoButton :hover {
-    opacity: 0.8;
-}

@@ -1,0 +1,75 @@
+.hidden {
+    display: none;
+}
+
+.homeButton {
+    background-color: rgb(255, 0, 0);
+    font-weight: 900;
+}
+
+.homeButton :hover {
+    background-color: blue;
+}
+
+.moviesButton {
+    font-weight: 900;
+}
+
+.moviesButton :hover {
+    font-size: 17.3px;
+}
+
+.seriesButton {
+    font-weight: 900;
+}
+
+.seriesButton :hover {
+    font-size: 17.3px;
+}
+
+.aboutButton {
+    font-weight: 900;
+}
+
+.aboutButton :hover {
+    font-size: 17.3px;
+}
+
+.banner-image {
+    background-image: url(../images/bgimage.jpg);
+    background-size: cover;
+}
+
+.pageTitle {
+    font-family: 'ArchicocoRegular';
+    font-weight: bold;
+    font-style: normal;
+    color: red;
+    font-size: 72px;
+}
+
+.banner-color {
+    background-image: url(../images/homeimg.jpg);
+    background-size: cover;
+}
+
+.banner2-color {
+    background-color: rgb(10, 10, 10);
+}
+
+* {
+    overflow-x: hidden;  /* hide horizontal */
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.imageHover {
+    opacity: 1.0;
+}
+
+.imageHover :hover {
+    opacity: 0.6;
+}
+
